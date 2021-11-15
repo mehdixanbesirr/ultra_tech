@@ -1,0 +1,1177 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Gotham";
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+body {
+    background: #242527;
+}
+
+.container {
+    padding: 10px;
+}
+
+.bg_img {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.bg_black {
+    position: relative;
+}
+
+.bg_img::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.logo_box {
+    z-index: 1;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle_menu_button {
+    width: 80px;
+    height: 40px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.toggle_menu_button::before {
+    content: "\e5d2";
+    font-family: "Material Icons";
+    font-weight: 500;
+}
+
+.toggle_menu {
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.display_flex {
+    display: flex !important;
+}
+
+.toggle_menu a {
+    position: relative;
+    display: block;
+    font-family: 'MuliRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    transition: all ease 500ms;
+    text-transform: uppercase;
+}
+
+.language_box {
+    position: relative;
+    width: 80px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.language_box::before {
+    position: absolute;
+    content: "\e5cf";
+    font-family: "Material Icons";
+    font-weight: 500;
+    right: 5px;
+    font-size: 20px;
+}
+
+.lang_section {
+    position: absolute;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    left: 0;
+    top: 35px;
+    z-index: 1;
+}
+
+.lang_section p {
+    height: 30px;
+    padding: 5px;
+}
+
+.play_video_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.play_item.item1 {
+    text-align: center;
+    font-weight: 550;
+    padding: 10px;
+}
+
+.play_item.item1 span {
+    display: block;
+}
+
+.play_item.item2 {
+    padding: 10px;
+    font-size: 100px;
+    transform: translate(50%, 70%);
+}
+
+.play_item.item2::before {
+    position: absolute;
+    content: "\e037";
+    font-family: "Material Icons";
+    font-weight: 500;
+}
+
+.row {
+    position: relative;
+}
+
+.chat_box {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.chat_logo {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/chat1.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.footer {
+    clear: both;
+    padding: 30px;
+}
+
+.join_us_box {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.join_us {
+    width: 200px;
+    padding: 10px;
+    font-family: PlayfairDisplay;
+    font-size: 45px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: 16.35px;
+    text-align: justify;
+    color: #009e9a;
+}
+
+.footer input[type="email"] {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
+    color: #848484;
+    text-align: right;
+}
+
+.footer ::placeholder {
+    color: #848484;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.join_us_box form p {
+    padding: 10px;
+    color: #848484;
+    font-size: 14px;
+}
+
+.address {
+    padding: 10px;
+    color: #848484;
+}
+
+.address p {
+    padding: 10px;
+}
+
+.contact_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_network {
+    padding: 20px;
+}
+
+.copyright {
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+.container_head {
+    font-family: PlayfairDisplay;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+/* ---------------------------- Main Page ---------------------------- */
+
+.container_box {
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: "Gotham Light", sans-serif;
+}
+
+.container_head_text {
+    color: #009e9a;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 5px 10px 5px;
+}
+
+.container_text {
+    letter-spacing: 1.25px;
+    padding: 10px 5px 10px 5px;
+    color: #333333;
+}
+
+.carousel_head {
+    color: #fff;
+    letter-spacing: 10px;
+    font-family: "PlayfairDisplay";
+    padding: 15px;
+}
+
+.projects_box .carousel_head {
+    text-align: center;
+}
+
+.projects .item {
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.projects .img1 {
+    background-image: url(../images/layihe1.png);
+}
+
+.projects .img2 {
+    background-image: url(../images/layihe2.png);
+}
+
+.projects .img3 {
+    background-image: url(../images/layihe3.png);
+}
+.projects .img4 {
+    background-image: url(../images/layiheler111111111.png);
+}
+
+.projects .img5 {
+    background-image: url(../images/layiheler333333333.png);
+}
+
+.circle_carousel .item {
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.partners .img1 {
+    background-image: url(../images/java.png);
+}
+
+.partners .img2 {
+    background-image: url(../images/oracle.png);
+}
+
+.partners .img3 {
+    background-image: url(../images/react.png);
+}
+
+.partners .img4 {
+    background-image: url(../images/java.png);
+}
+
+.partners .img5 {
+    background-image: url(../images/Swift.png);
+}
+
+.partners .img6 {
+    background-image: url(../images/spring.boot.png);
+}
+
+.news_box .carousel_head {
+    text-align: center;
+}
+
+.carousel .item {
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.projects .item {
+    height: 400px;
+}
+.news .img1 {
+    background-image: url(../images/xeberler1.png);
+}
+
+.news .img2 {
+    background-image: url(../images/xeberler2.png);
+}
+
+.news .img3 {
+    background-image: url(../images/xeberler3.png);
+}
+
+/* ---------------------------- Main Page Ends ---------------------------- */
+
+/* ---------------------------- Media Page Start ---------------------------- */
+
+.select_box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.select_items {
+    position: relative;
+    height: 280px;
+    margin: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all linear 500ms;
+}
+
+.select_items:hover, .selected_item {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.select_img {
+    position: absolute;
+    width: 140px;
+    left: 0;
+    bottom: 0;
+}
+
+.select_services img {
+    width: 160px;
+    bottom: -50px;
+    left: -40px;
+}
+
+.select_items {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.select_items a {
+    padding: 10px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.select_about img {
+    left: -30px;
+    bottom: -40px;
+}
+
+.select_certificate img {
+    bottom: -65px;
+    left: -45px;
+}
+
+.select_news img, .select_event img {
+    bottom: -25px;
+    left: -10px;
+}
+
+/* News Box */
+.display_none {
+    display: none;
+}
+
+.news_carousel .item {
+    width: 97%;
+    height: 550px;
+    background-size: 100% 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.news_carousel .img1 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.news_carousel .img2 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.news_carousel .img3 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.news_carousel .img4 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.news_carousel .img5 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.news_carousel .img6 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.news_text {
+    padding: 20px;
+}
+
+.news_head {
+    color: #00acaa;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.news_content {
+    font-size: 15px;
+    padding: 20px 0 0 0;
+    line-height: 25px;
+    color: #fff;
+    letter-spacing: 1.23px;
+}
+
+/* Event Box */
+
+.event_img_box {
+    position: relative;
+    width: 60%;
+}
+
+.event_img {
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.event_img.img1 {
+    background-image: url(../images/sertifikat.png);
+}
+
+.event_img.img2 {
+    background-image: url(../images/media-photo2.png);
+}
+
+.event_img.img3 {
+    background-image: url(../images/media-photo3.png);
+}
+
+.date {
+    background: #00acaa;
+    padding: 10px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
+
+.event_content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.event_head {
+    color: #00b8b8;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.event_text {
+    padding: 0 15px 15px 15px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 1.23px;
+    line-height: 30px;
+}
+
+/* ---------------------------- Media Page End ---------------------------- */
+
+/* ---------------------------- About Page Start ---------------------------- */
+
+.all_head {
+    font-family: "PlayfairDisplay";
+    color: #fff;
+    padding: 10px;
+}
+
+.about_video_box {
+    position: relative;
+    height: 550px;
+}
+
+.about_video {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.about_video::before {
+    position: absolute;
+    content: "\e037";
+    font-family: "Material Icons";
+    color: #fff;
+    font-weight: 500;
+    font-size: 90px;
+    top: 35%;
+    left: 45%;
+}
+
+.about_video_content {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.video_head {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #00acaa;
+    padding: 30px 20px 20px 20px;
+}
+
+.video_content {
+    padding: 10px 20px 20px 20px;
+    letter-spacing: 2px;
+    color: #333333;
+}
+
+.about_video_box {
+    position: relative;
+    height: 550px;
+}
+
+.clear {
+    clear: both;
+}
+
+.rewards_box {
+    padding: 20px;
+}
+
+.reward_list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+.reward_list li {
+    display: flex;
+    padding: 10px;
+}
+
+.rewards_box span {
+    display: block;
+    padding: 20px;
+}
+
+.reward_name {
+    position: relative;
+    width: 100%;
+}
+
+.reward_list li:not(:last-child) .reward_name::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: #686969;
+    left: 15px;
+}
+
+.employee .item {
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.employee .img1 {
+    background-image: url(../images/GambaqMəmmədov1.png);
+}
+
+.employee .img2 {
+    background-image: url(../images/AbdulQurbanov1.png);
+}
+
+.employee .img3 {
+    background-image: url(../images/LarisaParxomenko1.png);
+}
+
+.employee .img4 {
+    background-image: url(../images/ZaurMəmmədzadə1.png);
+}
+
+.employee .img5 {
+    background-image: url(../images/MəhəmmədZülfüqarlı1.png);
+}
+
+.history_name::before {
+    position: absolute;
+    content: "\e145";
+    font-family: "Material Icons";
+    font-weight: 500;
+    color: #4f5051;
+    font-size: 30px;
+    top: 30%;
+    right: 9%;
+}
+
+.history_list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+.history_name {
+    position: relative;
+    color: #fff;
+    width: calc(100% - 200px);
+}
+
+.history_list li:not(:last-child) .history_name::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: #686969;
+    left: 15px;
+}
+
+.history_list li {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.history_box span {
+    display: block;
+    padding: 20px;
+}
+
+.play_content {
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.play_content p:first-child {
+    font-size: 32px;
+}
+
+.play_content p:nth-child(2) {
+    font-size: 18px;
+}
+
+.vacation_list {
+    padding: 10px;
+    color: #fff;
+    clear: both;
+}
+
+.vacation_name {
+    position: relative;
+    color: #fff;
+    width: calc(100% - 200px);
+    cursor: pointer;
+}
+
+.vacation_name::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: #686969;
+    left: 15px;
+}
+
+.vacation_name::before {
+    position: absolute;
+    content: "\e145";
+    font-family: "Material Icons";
+    font-weight: 500;
+    color: #4f5051;
+    font-size: 30px;
+    top: 30%;
+    right: 9%;
+}
+
+.minus::before {
+    content: "\e15b" !important;
+}
+
+.vacation_list .years, .vacation_name {
+    display: inline-block;
+    padding: 10px;
+}
+
+.vacation {
+    display: flex;
+}
+
+.vacation_require_box {
+    display: none;
+}
+
+.vacation_require {
+    position: relative;
+}
+
+.vacation_box span {
+    display: block;
+    padding: 20px;
+}
+
+.vacation_require p {
+    display: inline-block;
+}
+
+.require_skill {
+    vertical-align: top;
+    clear: both;
+}
+
+.require_skill li {
+    padding: 10px 20px;
+}
+
+.left_skill li:not(:first-child) {
+    color: #686969;
+}
+
+.right_skill li:not(:first-child) {
+    list-style-type: disc;
+}
+
+.require_skill li:first-child {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.require_skill li:not(:first-child) {
+    font-size: 15px;
+}
+
+.experience, .experience_info {
+    padding: 10px;
+}
+
+.experience span:nth-child(2) {
+    color: #686969;
+}
+
+.experience {
+    width: 200px;
+    vertical-align: top;
+}
+
+.experience span:first-child {
+    font-weight: 600;
+}
+
+.experience_info {
+    width: calc(100% - 280px);
+}
+
+.apply_button {
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #2dafab;
+    color: #fff;
+    top: 100%;
+    right: 10%;
+}
+
+.reward_box {
+    position: relative;
+    height: 650px;
+}
+
+.reward_img {
+    height: 350px;
+    background-image: url(../images/sertifikat.png);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.reward_content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.reward_head {
+    color: #00acaa;
+    padding: 10px 20px;
+    letter-spacing: 1.25px;
+}
+
+.reward_text {
+    padding: 10px 20px;
+    letter-spacing: 1.25px;
+}
+
+.reward_text span {
+    color: #00acaa
+}
+
+.certificate_img {
+    background-color: transparent;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/serifikat-icon.svg);
+    background-size: 100% 100%;
+}
+
+.etichs_content {
+    padding: 20px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.etichs_list {
+    padding: 10px;
+    color: #fff;
+}
+
+.etichs_info {
+    position: relative;
+    color: #fff;
+    width: calc(100% - 200px);
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.etichs_info::after {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 1px;
+    background: #686969;
+    bottom: 0;
+    left: 35px;
+}
+
+.etichs_info::before {
+    position: absolute;
+    content: "\e5db";
+    font-family: "Material Icons";
+    font-weight: 500;
+    color: #4f5051;
+    font-size: 30px;
+    top: 30%;
+    right: 7%;
+}
+
+.etichs_list .years, .etichs_info {
+    display: inline-block;
+    padding: 30px;
+}
+
+.etichs_box span {
+    display: block;
+    padding: 10px;
+}
+
+.info_head {
+    font-family: "PlayfairDisplay";
+    color: #fff;
+    padding: 30px 20px 10px 20px;
+    font-weight: 450;
+
+}
+
+.info_content {
+    padding: 20px 20px 30px 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+/* ---------------------------- About Page End ---------------------------- */
+
+/* ---------------------------- Sercies Page Start ---------------------------- */
+.infrastructur_list li {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 420;
+    cursor: pointer;
+}
+
+.infrastructur_item span::after {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 1px;
+    background-color: #fff;
+    color: #686969;
+    bottom: 0;
+    left: 25px;
+}
+
+.infrastructur_item::before {
+    position: absolute;
+    content: '\e145';
+    font-family: "Material Icons";
+    font-weight: 500;
+    color: #686969;
+    font-size: 30px;
+    right: 30px;
+}
+
+.infra_info_box {
+    display: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.infra_text {
+    width: 100%;
+    font-weight: normal;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.solution_boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solution_box {
+    width: 47%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.solution_head {
+    font-size: 18px;
+    font-weight: 420;
+    padding: 10px;
+}
+
+.solution_info {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+
+/* ---------------------------- Services Page End ---------------------------- */
+
+/* ---------------------------- Contact Page Start ---------------------------- */
+.map_box {
+    position: relative;
+}
+
+.map_image {
+    width: 90%;
+    height: 450px;
+    background-image: url(../images/map.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.map_icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/map-icon.png);
+    background-size: 100% 100%;
+    top: 180px;
+    left: 48%;
+}
+
+.map_contact_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #6f6f6f;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.head {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contact_us {
+    position: relative;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.contact_content {
+    font-size: 14px;
+    padding: 20px;
+}
+
+.phone_number {
+    font-size: 12px;
+    color: #2dafab;
+}
+
+/* ---------------------------- Contact Page End ---------------------------- */
+
+/* ---------------------------- Project Page Start ---------------------------- */
+.projects_list li {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.projects_list span::after {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 1px;
+    background-color: #fff;
+    color: #686969;
+    bottom: 0;
+    left: 25px;
+}
+
+.projects_list li::before {
+    position: absolute;
+    content: '\e145';
+    font-family: "Material Icons";
+    font-weight: 500;
+    color: #686969;
+    font-size: 30px;
+    right: 30px;
+}
+
+/* ---------------------------- Project Page End ---------------------------- */
